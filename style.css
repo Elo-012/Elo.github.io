@@ -1,0 +1,313 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    background-image:url("Espacequiesttropbeau.jpg") ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+html {
+    color: white;
+}
+@font-face {
+    font-family:'SuperMario256';
+    src: url('SuperMario256.ttf') format('truetype');
+}
+
+nav {
+    background-color: red;
+    height: 60px; /* Hauteur de la navbar en pixels */
+    display: flex; /* Utilisation de flexbox pour aligner le contenu */
+    align-items: center; /* Aligner le contenu verticalement au centre */
+    font-family: 'SuperMario256';
+    font-size: 30px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Supprimez les marges par défaut de la liste */
+}
+
+nav li {
+    display: inline;
+    margin: 0 50px; /* Espace entre les éléments de la navbar */
+}
+/* Style des liens */
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: Arial, ; /* Changer la police de texte ici */
+}
+
+/* Au survol */
+nav a:hover {
+    color: #e4e3e3;
+}
+
+.videoroblox {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    max-height: 1000px;
+}
+.Titrebanniere {
+    position: relative;
+    text-align: left;
+}
+
+.fondrouge {
+    display: flex;
+    height: 100px;
+    width: 100%;
+}
+.text {
+    top: 50%; /* Ajustez la position verticale du texte */
+    position: absolute;
+    transform: translate(2%, -50%); /* Centre le texte par rapport à son contenant */
+    color: white; /* Couleur du texte */
+    font-size: 50px; /* Taille de la police */
+    font-family: 'SuperMario256';
+}
+
+#content {
+    position: absolute; /* Changez 'relative' en 'absolute' */
+    z-index: 10;
+    top: 0; /* Ajustez la position verticale au besoin */
+    left: 0; /* Ajustez la position horizontale au besoin */
+}
+
+#Acheter  {
+    width: 95%; /* Largeur du bouton */
+    max-width: 400px;
+    max-height: 100px;
+    background-image: linear-gradient(to right, #f7c900, #d89401);
+    color: #ffffff;
+    font-size: 4vh; /* Taille de la police */
+    font-family: 'SuperMario256';
+    cursor: pointer;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 400%;
+}
+#Acheter:hover {
+    background-image: linear-gradient(to right, #d1ab00, #926401);
+}
+
+.collagedesdeux .deuximage {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+.collagedesdeux .deuximage .boutonetjaquette .imagepub {
+    height: 90vh;
+    object-fit: cover;
+    z-index: 5;
+}
+.background-div {
+    background-image: url(Trailer.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -5;
+}
+
+.boutonetjaquette {
+    position: relative;
+    display: inline-block;
+}
+
+
+.div-mario{
+    display: flex; /* Utiliser Flexbox pour aligner les éléments côte à côte */
+    align-items: center; /* Aligner verticalement */
+}
+.mariodesc {
+    flex: 1; /* Permet à l'image de prendre la moitié de l'espace disponible */
+    margin-left: 30px; /* Espacement entre l'image et le texte */
+}
+.div-bowser {
+    display: flex; /* Utiliser Flexbox pour aligner les éléments côte à côte */
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items:center;
+}
+.bowserdesc {
+    flex: 1; /* Permet à l'image de prendre la moitié de l'espace disponible */
+    margin-left: 30px; /* Espacement entre l'image et le texte */
+}
+
+.Mario {
+    position: relative;
+    text-align: left;
+}
+
+.textmario {
+    top: 50%; /* Ajustez la position verticale du texte */
+    position: absolute;
+    transform: translate(2%, -50%); /* Centre le texte par rapport à son contenant */
+    color: white; /* Couleur du texte */
+    font-size: 50px; /* Taille de la police */
+    font-family: 'SuperMario256';
+}
+.Bowser {
+    position: relative;
+    text-align: right;
+}
+
+.textbowser {
+    top: 50%; /* Ajustez la position verticale du texte */
+    position: absolute;
+    transform: translate(2%, -50%); /* Centre le texte par rapport à son contenant */
+    color: white; /* Couleur du texte */
+    font-size: 50px; /* Taille de la police */
+    font-family: 'SuperMario256';
+}
+.image-mario {
+    display: block; /* Assurez-vous qu'il s'agit d'un élément de bloc pour définir la largeur et la hauteur */
+    margin-left: 10px; /* Centre l'image horizontalement */
+    width: 500px;   /* Définit la largeur de l'image */
+    padding: 5;
+
+}
+.image-bowser {
+    display: block; /* Assurez-vous qu'il s'agit d'un élément de bloc pour définir la largeur et la hauteur */
+    margin-right: 10px;
+    width: 500px;   /* Définit la largeur de l'image */
+    padding: 5;
+}
+
+
+.apropoimageettexte {
+    position: relative;
+    text-align: center;
+}
+.textduapropo {
+    position: absolute;
+    top: 50%; /* Ajustez la position verticale du texte */
+    transform: translate(0%, -50%); /* Centre le texte par rapport à son contenant */
+    color: rgb(255, 255, 255); /* Couleur du texte */
+    font-size: 3vh;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: 'SuperMario256';
+}
+.fondapropos {
+    width: 100%; /* Ajustez la largeur de l'image au besoin */
+    opacity: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    margin-left: 2%;
+    max-width: 100%;
+    width: 95%;
+}
+
+.slider-wrapper {
+    position: relative;
+}
+
+.slider-wrapper .slide-button{
+    position: absolute;
+    top: 50%;
+    height: 47px;
+    width: 50px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #ffe600;
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.slider-wrapper .slide-button:hover {
+    background: #fc5000;
+}
+
+.slider-wrapper .slide-button#prev-slide {
+    left: -20px;
+}
+.slider-wrapper .slide-button#next-slide {
+    right: -20px;
+}
+
+.slider-wrapper .image-list {
+    display: grid;
+    gap: 15px;
+    font-size: 0;
+    margin-bottom: 10px; /*écart de la slidebar aux images */
+    overflow-x: auto; /*cut*/
+    scrollbar-width: none;
+    grid-template-columns: repeat(10, 1fr);
+}
+.slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-wrapper .image-list .image-item {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.container .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.slider-scrollbar .scrollbar-track {
+    height: 2px;
+    width: 100%;
+    background: #181818;
+    position: relative;
+    border-radius: 4px;
+}
+
+.slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+}
+
+.slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: #ff0000;
+    border-radius: inherit;
+    cursor: grab;
+}
+
+.slider-scrollbar .scrollbar-thumb:active{
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+}
+.slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
